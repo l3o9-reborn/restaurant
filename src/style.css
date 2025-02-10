@@ -1,0 +1,102 @@
+:root {
+    /* Font Families */
+    --font-primary: 'Poppins', sans-serif; /* Clean and modern font */
+    --font-secondary: 'Merriweather', serif; /* Elegant, classic font for headings */
+  
+    /* Color Palette */
+    --color-primary: #8a2b06; /* Rich, appetizing dark red for main accents */
+    --color-secondary: #f4a261; /* Warm orange for highlights */
+    --color-background: #fff8f0; /* Soft beige for the background */
+    --color-text: #333333; /* Dark gray for text */
+    --color-muted: #7d7d7d; /* Light gray for muted text */
+    --color-border: #e2e2e2; /* Light gray for borders */
+  
+    /* Interactive Colors */
+    --color-button-bg: #8a2b06; /* Button background color */
+    --color-button-hover: #6f2005; /* Darker shade for hover effect */
+    --color-button-text: #ffffff; /* White text for buttons */
+  
+    /* Additional Colors */
+    --color-success: #4caf50; /* Green for success messages */
+    --color-error: #e63946; /* Red for error messages */
+  }
+
+body{
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+
+header{
+    background-color: var(--color-muted);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 0px 2px 4px 4px var(--color-text);
+
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    justify-self: flex-start;
+
+}
+.logo span{
+    display: block;
+    color: var(--color-button-hover);
+    font-size: 1.5rem;
+}
+
+header button{
+    background-color: var(--color-button-bg);
+    color: var(--color-button-text);
+    margin-left: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    border: 3px solid var(--color-background);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+header button:hover{
+    transform: scale(1.2);
+    background-color: var(--color-button-hover);
+}
+
+#content{
+    
+}
+.homePage h1{
+    margin: 2rem;
+    text-align: center;
+}
+.homePage div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.homePage div img{
+    height: 40rem;
+    width: 35rem;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 4px var(--color-secondary);
+    transition: transform 0.3s ease;
+}
+.homePage div img:hover{
+    transform: scale(1.1);
+}
+.homePage div p{
+    font-size: 2rem;
+    word-spacing: 1.5;
+    letter-spacing: 1.5;
+    line-height: 1.5;
+}
